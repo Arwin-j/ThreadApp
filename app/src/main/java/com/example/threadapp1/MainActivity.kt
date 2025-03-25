@@ -8,9 +8,9 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     val countdownTextview : TextView by lazy {
-       findViewById(R.id.
+       findViewById(R.id.countdownTextview)
     val countdownHandler = Handler(Looper.getMainLooper()){
-       countdownTextview 
+       countdownTextview.text = it.what.toString()
        true
     } 
     override fun onCreate(savedInstanceState: Bundle?) {
